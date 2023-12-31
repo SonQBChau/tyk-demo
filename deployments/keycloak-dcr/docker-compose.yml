@@ -22,7 +22,7 @@ services:
       restart_policy:
         condition: on-failure
   keycloak:
-    image: jboss/keycloak:11.0.2
+    image: mihaibob/keycloak:18.0.2-legacy
     depends_on:
       - keycloak-db
     command: ["-Djboss.http.port=8180"]
