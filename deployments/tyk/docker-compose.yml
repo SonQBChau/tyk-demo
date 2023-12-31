@@ -104,13 +104,13 @@ services:
     networks:
       - tyk
   httpbin:
-    image: kennethreitz/httpbin:latest
+    image: kong/httpbin:latest
     networks:
       tyk:
         aliases:
           - httpbin2
   swagger-petstore:
-    image: swaggerapi/petstore:1.0.5
+    image: swaggerapi/petstore3:latest
     networks:
       - tyk
     environment:
